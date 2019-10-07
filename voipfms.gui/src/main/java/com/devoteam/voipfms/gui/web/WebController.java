@@ -102,7 +102,6 @@ public class WebController {
 				jedis.ping();
 				redisConnected = true;
 				LOGGER.log(Level.INFO, "Successfully connected to Redis");
-				return;
 			}
 			catch (Exception e) {	//if connecting to redis was not successful
 				jedis.close();   //close session
