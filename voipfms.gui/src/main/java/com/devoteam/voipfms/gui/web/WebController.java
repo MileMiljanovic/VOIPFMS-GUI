@@ -126,7 +126,6 @@ public class WebController {
 		
 		try {
 			String res = jedis.get(id);
-			System.out.println(res);
 			if (res == null || res.trim().equals("") || res.trim().equals("null")) {
 				LOGGER.log(Level.INFO, "Subscriber with MSISDN: " + id + " does not exist! Returning 404...");
 				return new ResponseEntity(null, HttpStatus.NOT_FOUND);
