@@ -1,186 +1,276 @@
-2019-10-07 12:04:14.040  INFO 8048 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 8048 (C:\Users\Mile\Desktop\voipfms.gui\target\classes started by Mile in C:\Users\Mile\Desktop\voipfms.gui)
-2019-10-07 12:04:14.044  INFO 8048 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
-2019-10-07 12:04:14.522  INFO 8048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-07 12:04:14.524  INFO 8048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-07 12:04:14.547  INFO 8048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-2019-10-07 12:04:14.939  INFO 8048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-07 12:04:14.954  INFO 8048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-07 12:04:14.954  INFO 8048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-07 12:04:15.012  INFO 8048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-07 12:04:15.012  INFO 8048 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 940 ms
-[2019-10-07 12:04:15.063] [INFO   ] VOIP FMS GUI initialized! 
-[2019-10-07 12:04:15.080] [INFO   ] Pinging Redis... 
-[2019-10-07 12:04:16.110] [SEVERE ] Connecting to Redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:04:16.111] [INFO   ] Pinging Redis... 
-2019-10-07 12:04:16.250  INFO 8048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-07 12:04:16.301  INFO 8048 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-07 12:04:16.653  INFO 8048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-07 12:04:16.655  INFO 8048 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 2.874 seconds (JVM running for 3.444)
-[2019-10-07 12:04:17.139] [SEVERE ] Reconnecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:04:22.148] [INFO   ] Pinging Redis... 
-[2019-10-07 12:04:23.156] [SEVERE ] Reconnecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:04:28.171] [INFO   ] Pinging Redis... 
-[2019-10-07 12:04:29.185] [SEVERE ] Reconnecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:04:34.192] [INFO   ] Pinging Redis... 
-2019-10-07 12:04:34.873  INFO 8048 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-10-07 12:04:34.895  INFO 8048 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-[2019-10-07 12:04:35.206] [SEVERE ] Reconnecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:04:40.207] [INFO   ] Pinging Redis... 
-[2019-10-07 12:04:41.221] [SEVERE ] Reconnecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-2019-10-07 12:14:29.085  INFO 14504 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 14504 (C:\Users\Mile\Desktop\voipfms.gui\target\classes started by Mile in C:\Users\Mile\Desktop\voipfms.gui)
-2019-10-07 12:14:29.087  INFO 14504 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
-2019-10-07 12:14:29.571  INFO 14504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-07 12:14:29.573  INFO 14504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-07 12:14:29.593  INFO 14504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-2019-10-07 12:14:29.915  INFO 14504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-07 12:14:29.936  INFO 14504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-07 12:14:29.936  INFO 14504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-07 12:14:29.998  INFO 14504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-07 12:14:29.998  INFO 14504 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 877 ms
-[2019-10-07 12:14:30.040] [INFO   ] VOIP FMS GUI initialized! 
-[2019-10-07 12:14:30.048] [INFO   ] Pinging Redis... 
-2019-10-07 12:14:30.171  INFO 14504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-07 12:14:30.222  INFO 14504 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-07 12:14:30.552  INFO 14504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-07 12:14:30.554  INFO 14504 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.717 seconds (JVM running for 2.28)
-[2019-10-07 12:14:31.058] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:14:36.059] [INFO   ] Pinging Redis... 
-[2019-10-07 12:14:37.063] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-2019-10-07 12:14:40.975  INFO 14504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-07 12:14:40.975  INFO 14504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-07 12:14:40.981  INFO 14504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-[2019-10-07 12:14:42.064] [INFO   ] Pinging Redis... 
-[2019-10-07 12:14:43.068] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:14:48.068] [INFO   ] Pinging Redis... 
-[2019-10-07 12:14:49.072] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:14:54.073] [INFO   ] Pinging Redis... 
-[2019-10-07 12:14:55.088] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-2019-10-07 12:14:58.546  INFO 14504 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-10-07 12:14:58.559  INFO 14504 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-[2019-10-07 12:15:00.088] [INFO   ] Pinging Redis... 
-[2019-10-07 12:15:01.091] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-2019-10-07 12:15:54.546  INFO 11288 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 11288 (C:\Users\Mile\Desktop\voipfms.gui\target\classes started by Mile in C:\Users\Mile\Desktop\voipfms.gui)
-2019-10-07 12:15:54.550  INFO 11288 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
-2019-10-07 12:15:55.083  INFO 11288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-07 12:15:55.085  INFO 11288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-07 12:15:55.104  INFO 11288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-07 12:15:55.420  INFO 11288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-07 12:15:55.438  INFO 11288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-07 12:15:55.438  INFO 11288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-07 12:15:55.499  INFO 11288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-07 12:15:55.499  INFO 11288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 900 ms
-[2019-10-07 12:15:55.543] [INFO   ] VOIP FMS GUI initialized! 
-[2019-10-07 12:15:55.550] [INFO   ] Pinging Redis... 
-2019-10-07 12:15:55.679  INFO 11288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-07 12:15:55.719  INFO 11288 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-07 12:15:56.049  INFO 11288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-07 12:15:56.051  INFO 11288 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.814 seconds (JVM running for 2.502)
-[2019-10-07 12:15:56.560] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:01.561] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:02.564] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:07.564] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:08.568] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:13.570] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:14.584] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:19.585] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:20.600] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:25.601] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:26.615] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:31.616] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:32.630] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:37.631] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:38.634] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:43.635] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:44.641] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:49.642] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:50.656] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:16:55.657] [INFO   ] Pinging Redis... 
-[2019-10-07 12:16:56.660] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:17:01.662] [INFO   ] Pinging Redis... 
-[2019-10-07 12:17:02.665] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:17:07.666] [INFO   ] Pinging Redis... 
-[2019-10-07 12:17:08.679] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:17:13.679] [INFO   ] Pinging Redis... 
-[2019-10-07 12:17:14.683] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:17:19.684] [INFO   ] Pinging Redis... 
-[2019-10-07 12:17:20.686] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-[2019-10-07 12:17:25.687] [INFO   ] Pinging Redis... 
-[2019-10-07 12:17:26.690] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host 10.0.200.45:6379 
-2019-10-07 12:17:28.153  INFO 11288 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-10-07 12:17:28.172  INFO 11288 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-10-07 12:30:52.250  INFO 5180 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 5180 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
-2019-10-07 12:30:52.253  INFO 5180 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
-2019-10-07 12:30:52.692  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-07 12:30:52.693  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-07 12:30:52.711  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-07 12:30:53.001  INFO 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-07 12:30:53.016  INFO 5180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-07 12:30:53.016  INFO 5180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-07 12:30:53.073  INFO 5180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-07 12:30:53.073  INFO 5180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 791 ms
-[2019-10-07 12:30:53.115] [INFO   ] VOIP FMS GUI initialized! 
-[2019-10-07 12:30:53.121] [INFO   ] Pinging Redis... 
-[2019-10-07 12:30:53.128] [SEVERE ] Connecting to redis failed! Cause: null, Details: NOAUTH Authentication required. 
-2019-10-07 12:30:53.245  INFO 5180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-07 12:30:53.287  INFO 5180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-07 12:30:53.625  INFO 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-07 12:30:53.627  INFO 5180 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.635 seconds (JVM running for 2.33)
-[2019-10-07 12:30:58.130] [INFO   ] Pinging Redis... 
-[2019-10-07 12:30:58.131] [SEVERE ] Connecting to redis failed! Cause: null, Details: NOAUTH Authentication required. 
-2019-10-07 12:31:00.216  INFO 5180 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-10-07 12:31:00.228  INFO 5180 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-[2019-10-07 12:31:03.132] [INFO   ] Pinging Redis... 
-[2019-10-07 12:31:03.133] [SEVERE ] Connecting to redis failed! Cause: null, Details: NOAUTH Authentication required. 
-2019-10-07 12:34:43.409  INFO 10260 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 10260 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
-2019-10-07 12:34:43.411  INFO 10260 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
-2019-10-07 12:34:43.844  INFO 10260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-07 12:34:43.846  INFO 10260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-07 12:34:43.867  INFO 10260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-2019-10-07 12:34:44.160  INFO 10260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-07 12:34:44.177  INFO 10260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-07 12:34:44.177  INFO 10260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-07 12:34:44.236  INFO 10260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-07 12:34:44.237  INFO 10260 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 799 ms
-[2019-10-07 12:34:44.276] [INFO   ] VOIP FMS GUI initialized! 
-2019-10-07 12:34:44.401  INFO 10260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-07 12:34:44.448  INFO 10260 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-07 12:34:44.757  INFO 10260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-07 12:34:44.759  INFO 10260 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.574 seconds (JVM running for 2.098)
-[2019-10-07 12:34:45.318] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:34:51.362] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:34:57.386] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:35:03.408] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:35:08.420] [INFO   ] Pinging Redis... 
-[2019-10-07 12:35:08.429] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:35:13.446] [INFO   ] Pinging Redis... 
-[2019-10-07 12:35:13.456] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:35:18.488] [INFO   ] Pinging Redis... 
-[2019-10-07 12:35:18.503] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:35:23.526] [INFO   ] Pinging Redis... 
-[2019-10-07 12:35:23.535] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:35:28.537] [INFO   ] Pinging Redis... 
-[2019-10-07 12:35:28.537] [INFO   ] Successfully connected to Redis 
-2019-10-07 12:36:02.378  INFO 10260 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-07 12:36:02.378  INFO 10260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-07 12:36:02.383  INFO 10260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-[2019-10-07 12:36:02.404] [INFO   ] REST request arrived! Requested id: 55 
-[2019-10-07 12:36:02.405] [INFO   ] Subscriber with MSISDN: 55 does not exist! Returning 404... 
-[2019-10-07 12:36:08.408] [INFO   ] REST request arrived! Requested id: 1 
-[2019-10-07 12:36:08.409] [INFO   ] Subscriber with MSISDN: 1 does not exist! Returning 404... 
-[2019-10-07 12:36:24.880] [INFO   ] REST request arrived! Requested id: 1 
-[2019-10-07 12:36:24.881] [SEVERE ] Exception has occured while fetching data! Cause: java.net.SocketException: Connection reset by peer: socket write error, Details: java.net.SocketException: Connection reset by peer: socket write error 
-[2019-10-07 12:36:25.883] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:36:31.894] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:36:37.906] [SEVERE ] Connecting to redis failed! Cause: java.net.ConnectException: Connection refused: connect, Details: Failed connecting to host localhost:6379 
-[2019-10-07 12:36:42.922] [INFO   ] Pinging Redis... 
-[2019-10-07 12:36:42.932] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:36:47.950] [INFO   ] Pinging Redis... 
-[2019-10-07 12:36:47.958] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:36:52.974] [INFO   ] Pinging Redis... 
-[2019-10-07 12:36:52.984] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:36:58.000] [INFO   ] Pinging Redis... 
-[2019-10-07 12:36:58.010] [SEVERE ] Connecting to redis failed! Cause: null, Details: LOADING Redis is loading the dataset in memory 
-[2019-10-07 12:37:03.023] [INFO   ] Pinging Redis... 
-[2019-10-07 12:37:03.024] [INFO   ] Successfully connected to Redis 
-2019-10-07 12:37:05.264  INFO 10260 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-10-07 12:37:05.286  INFO 10260 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:18:03.410  INFO 4696 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 4696 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 09:18:03.416  INFO 4696 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 09:18:04.026  INFO 4696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 09:18:04.028  INFO 4696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 09:18:04.045  INFO 4696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-16 09:18:04.374  INFO 4696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 09:18:04.392  INFO 4696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 09:18:04.393  INFO 4696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 09:18:04.456  INFO 4696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 09:18:04.456  INFO 4696 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 980 ms
+[2019-10-16 09:18:04.500] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 09:18:04.508] [INFO   ] Pinging Redis... 
+[2019-10-16 09:18:04.525] [INFO   ] Successfully connected to Redis 
+2019-10-16 09:18:04.646  INFO 4696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:18:04.698  INFO 4696 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 09:18:05.004  INFO 4696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 09:18:05.006  INFO 4696 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.845 seconds (JVM running for 2.598)
+2019-10-16 09:18:08.748  INFO 4696 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 09:18:08.748  INFO 4696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 09:18:08.753  INFO 4696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+[2019-10-16 09:18:27.295] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:18:27.301] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 09:19:02.199] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 09:19:02.206] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+2019-10-16 09:21:26.607  INFO 4696 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 09:21:26.637  INFO 4696 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:33:10.952  INFO 16540 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 16540 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 09:33:10.954  INFO 16540 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 09:33:11.404  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 09:33:11.405  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 09:33:11.424  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-16 09:33:11.719  INFO 16540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 09:33:11.734  INFO 16540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 09:33:11.734  INFO 16540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 09:33:11.793  INFO 16540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 09:33:11.794  INFO 16540 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 805 ms
+[2019-10-16 09:33:11.833] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 09:33:11.839] [INFO   ] Pinging Redis... 
+[2019-10-16 09:33:11.866] [INFO   ] Successfully connected to Redis 
+2019-10-16 09:33:11.960  INFO 16540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:33:11.995  INFO 16540 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 09:33:12.329  INFO 16540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 09:33:12.331  INFO 16540 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.648 seconds (JVM running for 2.304)
+2019-10-16 09:33:17.229  INFO 16540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 09:33:17.229  INFO 16540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 09:33:17.235  INFO 16540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+[2019-10-16 09:35:34.561] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:35:34.566] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 09:36:16.543] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:36:16.549] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 09:36:25.848] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:36:25.853] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 09:36:39.952  INFO 16540 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 09:36:39.969  INFO 16540 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:38:05.666  INFO 8736 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 8736 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 09:38:05.668  INFO 8736 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 09:38:06.111  INFO 8736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 09:38:06.113  INFO 8736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 09:38:06.132  INFO 8736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-16 09:38:06.440  INFO 8736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 09:38:06.458  INFO 8736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 09:38:06.458  INFO 8736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 09:38:06.518  INFO 8736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 09:38:06.519  INFO 8736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 819 ms
+[2019-10-16 09:38:06.563] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 09:38:06.571] [INFO   ] Pinging Redis... 
+[2019-10-16 09:38:06.587] [INFO   ] Successfully connected to Redis 
+2019-10-16 09:38:06.699  INFO 8736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:38:06.746  INFO 8736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 09:38:07.053  INFO 8736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 09:38:07.055  INFO 8736 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.657 seconds (JVM running for 2.261)
+2019-10-16 09:38:08.984  INFO 8736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 09:38:08.985  INFO 8736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 09:38:08.991  INFO 8736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+[2019-10-16 09:38:16.989] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:38:16.994] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 09:39:02.993] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:39:02.998] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 09:42:44.602] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:42:44.608] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 09:43:42.921  INFO 8736 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 09:43:42.939  INFO 8736 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:44:09.965  INFO 16320 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 16320 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 09:44:09.967  INFO 16320 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 09:44:10.392  INFO 16320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 09:44:10.393  INFO 16320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 09:44:10.411  INFO 16320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-16 09:44:10.866  INFO 16320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 09:44:10.882  INFO 16320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 09:44:10.882  INFO 16320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 09:44:10.940  INFO 16320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 09:44:10.940  INFO 16320 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 946 ms
+[2019-10-16 09:44:10.980] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 09:44:10.990] [INFO   ] Pinging Redis... 
+2019-10-16 09:44:11.154  INFO 16320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:44:11.222  INFO 16320 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+[2019-10-16 09:44:11.222] [INFO   ] Successfully connected to Redis 
+2019-10-16 09:44:11.701  INFO 16320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 09:44:11.705  INFO 16320 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.994 seconds (JVM running for 2.577)
+2019-10-16 09:44:22.571  INFO 16320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 09:44:22.571  INFO 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 09:44:22.576  INFO 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+[2019-10-16 09:44:29.574] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:44:29.588] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 09:44:47.401] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:44:47.407] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 09:45:58.065  INFO 16320 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 09:45:58.082  INFO 16320 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:48:00.521  INFO 13560 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 13560 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 09:48:00.523  INFO 13560 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 09:48:01.021  INFO 13560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 09:48:01.022  INFO 13560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 09:48:01.041  INFO 13560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-16 09:48:01.362  INFO 13560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 09:48:01.381  INFO 13560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 09:48:01.381  INFO 13560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 09:48:01.456  INFO 13560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 09:48:01.456  INFO 13560 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 896 ms
+[2019-10-16 09:48:01.499] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 09:48:01.506] [INFO   ] Pinging Redis... 
+[2019-10-16 09:48:01.520] [INFO   ] Successfully connected to Redis 
+2019-10-16 09:48:01.628  INFO 13560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 09:48:01.664  INFO 13560 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 09:48:01.996  INFO 13560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 09:48:01.999  INFO 13560 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.726 seconds (JVM running for 2.409)
+2019-10-16 09:48:05.204  INFO 13560 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 09:48:05.204  INFO 13560 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 09:48:05.208  INFO 13560 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+[2019-10-16 09:48:12.581] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 09:48:12.587] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 09:50:47.365  INFO 13560 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 09:50:47.381  INFO 13560 --- [RMI TCP Connection(9)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 10:30:30.428  INFO 6208 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 6208 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 10:30:30.430  INFO 6208 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 10:30:30.845  INFO 6208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 10:30:30.847  INFO 6208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 10:30:30.872  INFO 6208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-10-16 10:30:31.205  INFO 6208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 10:30:31.224  INFO 6208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 10:30:31.225  INFO 6208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 10:30:31.290  INFO 6208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 10:30:31.290  INFO 6208 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 828 ms
+[2019-10-16 10:30:31.335] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 10:30:31.345] [INFO   ] Pinging Redis... 
+[2019-10-16 10:30:31.366] [INFO   ] Successfully connected to Redis 
+2019-10-16 10:30:31.487  INFO 6208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 10:30:31.539  INFO 6208 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 10:30:32.106  INFO 6208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 10:30:32.110  INFO 6208 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.933 seconds (JVM running for 2.499)
+2019-10-16 10:30:33.433  INFO 6208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 10:30:33.433  INFO 6208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 10:30:33.438  INFO 6208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+[2019-10-16 10:30:53.456] [INFO   ] REST request arrived! Requested id: 3816059900083 
+[2019-10-16 10:30:53.461] [INFO   ] Subscriber with MSISDN: 3816059900083 found! Returning response... 
+[2019-10-16 10:31:24.831] [INFO   ] REST request arrived! Requested id: 3816059900064 
+[2019-10-16 10:31:24.837] [INFO   ] Subscriber with MSISDN: 3816059900064 found! Returning response... 
+[2019-10-16 10:42:08.064] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 10:42:08.069] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 10:51:20.465] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 10:51:20.470] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 10:51:36.214  INFO 6208 --- [RMI TCP Connection(27)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 10:51:36.232  INFO 6208 --- [RMI TCP Connection(27)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 10:56:16.964  INFO 9496 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 9496 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 10:56:16.966  INFO 9496 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 10:56:17.430  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 10:56:17.431  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 10:56:17.451  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-16 10:56:17.758  INFO 9496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 10:56:17.774  INFO 9496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 10:56:17.775  INFO 9496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 10:56:17.841  INFO 9496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 10:56:17.841  INFO 9496 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 841 ms
+[2019-10-16 10:56:17.887] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 10:56:17.894] [INFO   ] Pinging Redis... 
+[2019-10-16 10:56:17.911] [INFO   ] Successfully connected to Redis 
+2019-10-16 10:56:18.033  INFO 9496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 10:56:18.086  INFO 9496 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 10:56:18.406  INFO 9496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 10:56:18.408  INFO 9496 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.755 seconds (JVM running for 2.315)
+2019-10-16 10:56:22.829  INFO 9496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 10:56:22.830  INFO 9496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 10:56:22.836  INFO 9496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+[2019-10-16 11:08:44.757] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 11:08:44.762] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 11:10:46.982] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 11:10:46.989] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 11:12:53.606] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 11:12:53.614] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 11:13:14.070] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 11:13:14.082] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 11:13:24.779  INFO 9496 --- [RMI TCP Connection(25)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 11:13:24.792  INFO 9496 --- [RMI TCP Connection(25)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 11:14:54.708  INFO 14076 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 14076 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 11:14:54.710  INFO 14076 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 11:14:55.129  INFO 14076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 11:14:55.130  INFO 14076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 11:14:55.147  INFO 14076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-16 11:14:55.425  INFO 14076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 11:14:55.441  INFO 14076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 11:14:55.441  INFO 14076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 11:14:55.516  INFO 14076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 11:14:55.517  INFO 14076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 769 ms
+[2019-10-16 11:14:55.567] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 11:14:55.575] [INFO   ] Pinging Redis... 
+[2019-10-16 11:14:55.592] [INFO   ] Successfully connected to Redis 
+2019-10-16 11:14:55.936  INFO 14076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 11:14:56.018  INFO 14076 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 11:14:56.385  INFO 14076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 11:14:56.387  INFO 14076 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.929 seconds (JVM running for 2.555)
+2019-10-16 11:15:00.089  INFO 14076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 11:15:00.090  INFO 14076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 11:15:00.094  INFO 14076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+[2019-10-16 11:22:48.658] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:22:48.667] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:23:25.934] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:23:25.939] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:24:14.264] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:24:14.268] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:24:38.255] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:24:38.262] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:26:34.095] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:26:34.104] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:27:25.559] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:27:25.569] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:28:03.071] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:28:03.079] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:33:29.942] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 11:33:29.948] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-16 11:56:38.382] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 11:56:38.404] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-16 12:03:39.322  INFO 14076 --- [RMI TCP Connection(56)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 12:03:39.336  INFO 14076 --- [RMI TCP Connection(56)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 12:09:55.258  INFO 4944 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 4944 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-16 12:09:55.259  INFO 4944 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-16 12:09:55.676  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-16 12:09:55.678  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-16 12:09:55.700  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-10-16 12:09:55.992  INFO 4944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 12:09:56.009  INFO 4944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 12:09:56.009  INFO 4944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-16 12:09:56.065  INFO 4944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 12:09:56.065  INFO 4944 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 778 ms
+[2019-10-16 12:09:56.105] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-16 12:09:56.114] [INFO   ] Pinging Redis... 
+[2019-10-16 12:09:56.134] [INFO   ] Successfully connected to Redis 
+2019-10-16 12:09:56.234  INFO 4944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 12:09:56.280  INFO 4944 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-16 12:09:56.637  INFO 4944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 12:09:56.639  INFO 4944 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 1.612 seconds (JVM running for 2.214)
+2019-10-16 12:10:00.642  INFO 4944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 12:10:00.642  INFO 4944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 12:10:00.647  INFO 4944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+[2019-10-16 12:10:32.169] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:10:32.175] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 12:11:14.647] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:11:14.652] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 12:12:28.062] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:12:28.074] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 12:12:48.702] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:12:48.793] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 12:13:48.477] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:13:48.484] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 12:14:28.974] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:14:28.980] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 12:58:04.038] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 12:58:04.043] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 13:04:42.965] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 13:04:42.973] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 13:04:53.092] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 13:04:53.220] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 13:06:02.718] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-16 13:06:02.730] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-16 13:06:27.845] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-16 13:06:27.850] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+2019-10-16 13:06:58.752  INFO 4944 --- [RMI TCP Connection(65)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-16 13:06:58.770  INFO 4944 --- [RMI TCP Connection(65)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

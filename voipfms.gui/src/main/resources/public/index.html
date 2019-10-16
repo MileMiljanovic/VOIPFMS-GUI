@@ -6,28 +6,68 @@
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="vip.jpg">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<title>VOIP FMS GUI</title>
 		<style>
 		
-		#usertable {
+			#maindiv{
+				margin: 0 auto;
+				width: 95%;
+			}
+			
+			.jumbotron {
+			    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(30,87,153,0.54) 46%, rgba(125,185,232,0.18) 82%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(30,87,153,0.54) 46%,rgba(125,185,232,0.18) 82%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(30,87,153,0.54) 46%,rgba(125,185,232,0.18) 82%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+			}
+			 
+			h1{
+			    text-align: center;
+			    color: white !important;
+			    font-weight: bold;
+			}
+		
+			.nav-tabs{
+			  background-color:#C8D3DB;
+			}
+			
+			.nav-tabs > li > a{
+			  border-radius: 5px;
+			}
+			.nav-tabs > li > a:hover{
+			  background-color: #3D515F !important;
+			    border-radius: 5px;
+			    color:#fff;
+			    border:1px solid black;
+			}
+			.nav-tabs > li.active > a,
+			.nav-tabs > li.active > a:focus,
+			.nav-tabs > li.active > a:hover{
+			    background-color: #68889E !important;
+			    color:#fff;
+			    border:2px solid #3F515F;
+			}
+		
+			.usertable {
 			  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 			  border-collapse: collapse;
-			  width: 60%;
+			  width: 70%;
 			}
 
-			#usertable td, #usertable th {
+			.usertable td, .usertable th {
 			  border: 1px solid #C0C0C0;
 			  padding: 8px;
 			}
 
-			#usertable tr:nth-child(odd){background-color: #f2f2f2;}
+			.usertable tr:nth-child(odd){background-color: #f2f2f2;}
 
-			#usertable tr:hover {background-color: #ADD8E6;}
+			.usertable tr:hover {background-color: #ADD8E6;}
 
-			#usertable th {
+			.usertable th {
 			  padding-top: 12px;
 			  padding-bottom: 12px;
 			  text-align: left;
@@ -46,12 +86,12 @@
 	<body>
 		<div class="container">
 			<div class="jumbotron">
-				<h1 style="text-align: center;">VOIP FMS GUI</h1> 
+				<h1>VOIP FMS GUI</h1> 
 			</div>
 		</div>
 		</br>
 
-		<div align="center">
+		<div align="center" id="maindiv">
 			</br>
 			<form class="form-inline">
 				<div class="form-group mx-sm-3 mb-2">
@@ -63,8 +103,64 @@
 			</br>
 			<div class="alert alert-danger" id="errordiv">
 			</div>
-			<table id="usertable">
-			</table>
+			
+			<ul class="nav nav-tabs nav-justified">
+			  <li class="active"><a data-toggle="tab" href="#home">Basic Information</a></li>
+			  <li><a data-toggle="tab" href="#callsOut">Outgoing Calls</a></li>
+			  <li><a data-toggle="tab" href="#callsInc">Incoming Calls</a></li>
+			  <li><a data-toggle="tab" href="#callsFwd">Forwarded Calls</a></li>
+			  <li><a data-toggle="tab" href="#smsSent">Sent SMS</a></li>
+			  <li><a data-toggle="tab" href="#smsRec">Received SMS</a></li>
+			  <li><a data-toggle="tab" href="#statusActivity">Status Activity</a></li>
+			  <li><a data-toggle="tab" href="#statusChanges">Status Changes</a></li>
+			</ul>
+			
+			<div class="tab-content">
+			  <div id="home" class="tab-pane fade in active">
+			  	</br>
+			    <table id="infoTable" class="usertable">
+				</table>
+			  </div>
+			  
+			  <div id="callsOut" class="tab-pane fade">
+			    </br>
+			    <table id="callsOutTable" class="usertable">
+				</table>
+			  </div>
+			  <div id="callsInc" class="tab-pane fade">
+			    </br>
+			    <table id="callsIncTable" class="usertable">
+				</table>
+			  </div>
+			  <div id="callsFwd" class="tab-pane fade">
+			    </br>
+			    <table id="callsFwdTable" class="usertable">
+				</table>
+			  </div>
+			  <div id="smsSent" class="tab-pane fade">
+			    </br>
+			    <table id="smsSentTable" class="usertable">
+				</table>
+			  </div>
+			  <div id="smsRec" class="tab-pane fade">
+			    </br>
+			    <table id="smsRecTable" class="usertable">
+				</table>
+			  </div>
+			  <div id="statusActivity" class="tab-pane fade">
+			    </br>
+			    <table id="statusActivityTable" class="usertable">
+				</table>
+			  </div>
+			  <div id="statusChanges" class="tab-pane fade">
+			    </br>
+			    <table id="statusChangesTable" class="usertable">
+				</table>
+			  </div>
+			  
+			</div>
+			
+			
 			</br>
 		</div>
 		
@@ -76,7 +172,14 @@
 			function fetchUser(id) {
 				
 				if(id.trim() == "") {
-					//document.getElementById("usertable").innerHTML = "";
+					document.getElementById("infoTable").innerHTML = "";
+					document.getElementById("callsOutTable").innerHTML = "";
+					document.getElementById("callsIncTable").innerHTML = "";
+					document.getElementById("callsFwdTable").innerHTML = "";
+					document.getElementById("smsSentTable").innerHTML = "";
+					document.getElementById("smsRecTable").innerHTML = "";
+					document.getElementById("statusActivityTable").innerHTML = "";
+					document.getElementById("statusChangesTable").innerHTML = "";
 					alert("Please input a valid value");
 					return;
 				}
@@ -94,6 +197,9 @@
 					  var table = "<tr><th>Field</th><th>Value</th></tr>";
 					  table += "<tr><td>MSISDN</td><td>" + data["basicMsisdn"] + "</td></tr>";
 					  table += "<tr><td>Activation date</td><td>" + data["basicActivationDate"] + "</td></tr>";
+					  table += "<tr><td>AllActivitiesCount</td><td>" + data.statusActivityList["allActivitiesCount"] + "</td></tr>";
+					  table += "<tr><td>LastActivityDate</td><td>" + data.statusActivityList["lastActivityDate"] + "</td></tr>";
+					  table += "<tr><td>LastChangeDate</td><td>" + data.statusChangesTrackingList["lastChangeDate"] + "</td></tr>";
 					  table += "<tr><td>BnumberVip30d</td><td>" + data["bnumberVip30d"] + "</td></tr>";
 					  table += "<tr><td>BnumberAll7d</td><td>" + data["bnumberAll7d"] + "</td></tr>";
 					  table += "<tr><td>BnumberAll10d</td><td>" + data["bnumberAll10d"] + "</td></tr>";
@@ -103,28 +209,178 @@
 					  table += "<tr><td>CallsIncoming7d</td><td>" + data["callsIncoming7d"] + "</td></tr>";
 					  table += "<tr><td>CallsIncoming10d</td><td>" + data["callsIncoming10d"] + "</td></tr>";
 					  table += "<tr><td>CallsOutgoing7d</td><td>" + data["callsOutgoing7d"] + "</td></tr>";
-					  table += "<tr><td>AllActivitiesCount</td><td>" + data.statusActivityList["allActivitiesCount"] + "</td></tr>";
-					  table += "<tr><td>LastChangeDate</td><td>" + data.statusChangesTrackingList["lastChangeDate"] + "</td></tr>";
-					  document.getElementById("usertable").innerHTML = table;
+					  table += "<tr><td>CallsOutgoing10d</td><td>" + data["callsOutgoing10d"] + "</td></tr>";
+					  table += "<tr><td>CallsOutgoing30d</td><td>" + data["callsOutgoing30d"] + "</td></tr>";
+					  table += "<tr><td>ActivityAll7d</td><td>" + data["activityAll7d"] + "</td></tr>";
+					  table += "<tr><td>ActivityAll10d</td><td>" + data["activityAll10d"] + "</td></tr>";
+					  table += "<tr><td>ActivityData10d</td><td>" + data["activityData10d"] + "</td></tr>";
+					  table += "<tr><td>ActivityVas10d</td><td>" + data["activityVas10d"] + "</td></tr>";
+					  table += "<tr><td>SmsSent7d</td><td>" + data["smsSent7d"] + "</td></tr>";
+					  table += "<tr><td>DaysSinceOnHot</td><td>" + data["daysSinceOnHot"] + "</td></tr>";
+					  table += "<tr><td>DaysSinceNonFraud</td><td>" + data["daysSinceNonFraud"] + "</td></tr>";
+					  table += "<tr><td>DaysSinceActivation</td><td>" + data["daysSinceActivation"] + "</td></tr>";
+					  table += "<tr><td>DaysOfMtsOnly</td><td>" + data["daysOfMtsOnly"] + "</td></tr>";
+					  table += "<tr><td>DaysOfVipOnly</td><td>" + data["daysOfVipOnly"] + "</td></tr>";
+					  table += "<tr><td>DaysOfTelenorOnly</td><td>" + data["daysOfTelenorOnly"] + "</td></tr>";
+					  table += "<tr><td>BasicAccountStatus</td><td>" + data["basicAccountStatus"] + "</td></tr>";
+					  table += "<tr><td>CallsTowardsSuspendedOnHot3d</td><td>" + data["callsTowardsSuspendedOnHot3d"] + "</td></tr>";
+					  table += "<tr><td>HoursSinceOnHot</td><td>" + data["hoursSinceOnHot"] + "</td></tr>";
+					  table += "<tr><td>BnumberSmsAll7d</td><td>" + data["bnumberSmsAll7d"] + "</td></tr>";
+					  table += "<tr><td>CallsForwarded10d</td><td>" + data["callsForwarded10d"] + "</td></tr>";
+					  table += "<tr><td>CallsForwarded30d</td><td>" + data["callsForwarded30d"] + "</td></tr>";
+					  table += "<tr><td>CallsIncoming30d</td><td>" + data["callsIncoming30d"] + "</td></tr>";
+					  table += "<tr><td>ActivityAll30d</td><td>" + data["activityAll30d"] + "</td></tr>";
+					  table += "<tr><td>CallsTowardsVip30d</td><td>" + data["callsTowardsVip30d"] + "</td></tr>";
+					  table += "<tr><td>BasicIsAlo</td><td>" + data["basicIsAlo"] + "</td></tr>";
+					  table += "<tr><td>FlaggedByMts</td><td>" + data["flaggedByMts"] + "</td></tr>";
+					  table += "<tr><td>FlaggedByTelenor</td><td>" + data["flaggedByTelenor"] + "</td></tr>";
+					  table += "<tr><td>FlaggedByTag</td><td>" + data["flaggedByTag"] + "</td></tr>";
+					 
+					  document.getElementById("infoTable").innerHTML = table;
+
+					  var tableCallsOut = "<tr><th>Field</th><th>Value</th></tr>";
+					  for(var i = 0; i < data.listCallsOutgoing.length; i++) {
+						  tableCallsOut += "<tr><td>CallInitiatorMsisdn</td><td>" + data.listCallsOutgoing[i].callInitiatorMsisdn + "</td></tr>";
+						  tableCallsOut += "<tr><td>CallReceiverMsisdn</td><td>" + data.listCallsOutgoing[i].callReceiverMsisdn + "</td></tr>";
+						  tableCallsOut += "<tr><td>CellId</td><td>" + data.listCallsOutgoing[i].cellId + "</td></tr>";
+						  tableCallsOut += "<tr><td>Roaming</td><td>" + data.listCallsOutgoing[i].roaming + "</td></tr>";
+						  tableCallsOut += "<tr><td>Timestamp</td><td>" + data.listCallsOutgoing[i].timestamp + "</td></tr>";
+						  tableCallsOut += "<tr><td>Duration</td><td>" + data.listCallsOutgoing[i].duration + "</td></tr>";
+						  tableCallsOut += "<tr><td>Cost</td><td>" + data.listCallsOutgoing[i].cost + "</td></tr>";
+						  tableCallsOut += "<tr><td>CallInitiatorImei</td><td>" + data.listCallsOutgoing[i].callInitiatorImei + "</td></tr>";
+						  tableCallsOut += "<tr><td>CallReceiverImei</td><td>" + data.listCallsOutgoing[i].callReceiverImei + "</td></tr>";
+						  tableCallsOut += "<tr><td colspan='2' bgcolor='#ADD8E6'></td></tr>";
+					  }
+
+					  document.getElementById("callsOutTable").innerHTML = tableCallsOut;
+
+					  var tableCallsInc = "<tr><th>Field</th><th>Value</th></tr>";
+					  for(var i = 0; i < data.listCallsIncoming.length; i++) {
+						  tableCallsInc += "<tr><td>CallInitiatorMsisdn</td><td>" + data.listCallsIncoming[i].callInitiatorMsisdn + "</td></tr>";
+						  tableCallsInc += "<tr><td>CallReceiverMsisdn</td><td>" + data.listCallsIncoming[i].callReceiverMsisdn + "</td></tr>";
+						  tableCallsInc += "<tr><td>CellId</td><td>" + data.listCallsIncoming[i].cellId + "</td></tr>";
+						  tableCallsInc += "<tr><td>Roaming</td><td>" + data.listCallsIncoming[i].roaming + "</td></tr>";
+						  tableCallsInc += "<tr><td>Timestamp</td><td>" + data.listCallsIncoming[i].timestamp + "</td></tr>";
+						  tableCallsInc += "<tr><td>Duration</td><td>" + data.listCallsIncoming[i].duration + "</td></tr>";
+						  tableCallsInc += "<tr><td>Cost</td><td>" + data.listCallsIncoming[i].cost + "</td></tr>";
+						  tableCallsInc += "<tr><td>CallInitiatorImei</td><td>" + data.listCallsIncoming[i].callInitiatorImei + "</td></tr>";
+						  tableCallsInc += "<tr><td>CallReceiverImei</td><td>" + data.listCallsIncoming[i].callReceiverImei + "</td></tr>";
+						  tableCallsInc += "<tr><td colspan='2' bgcolor='#ADD8E6'></td></tr>";
+					  }
+
+					  document.getElementById("callsIncTable").innerHTML = tableCallsInc;
+
+					  var tableCallsFwd = "<tr><th>Field</th><th>Value</th></tr>";
+					  for(var i = 0; i < data.listCallsForwarded.length; i++) {
+						  tableCallsFwd += "<tr><td>CallInitiatorMsisdn</td><td>" + data.listCallsForwarded[i].callInitiatorMsisdn + "</td></tr>";
+						  tableCallsFwd += "<tr><td>CallReceiverMsisdn</td><td>" + data.listCallsForwarded[i].callReceiverMsisdn + "</td></tr>";
+						  tableCallsFwd += "<tr><td>CellId</td><td>" + data.listCallsForwarded[i].cellId + "</td></tr>";
+						  tableCallsFwd += "<tr><td>Roaming</td><td>" + data.listCallsForwarded[i].roaming + "</td></tr>";
+						  tableCallsFwd += "<tr><td>Timestamp</td><td>" + data.listCallsForwarded[i].timestamp + "</td></tr>";
+						  tableCallsFwd += "<tr><td>Duration</td><td>" + data.listCallsForwarded[i].duration + "</td></tr>";
+						  tableCallsFwd += "<tr><td>Cost</td><td>" + data.listCallsForwarded[i].cost + "</td></tr>";
+						  tableCallsFwd += "<tr><td>CallInitiatorImei</td><td>" + data.listCallsForwarded[i].callInitiatorImei + "</td></tr>";
+						  tableCallsFwd += "<tr><td>CallReceiverImei</td><td>" + data.listCallsForwarded[i].callReceiverImei + "</td></tr>";
+						  tableCallsFwd += "<tr><td colspan='2' bgcolor='#ADD8E6'></td></tr>";
+					  }
+
+					  document.getElementById("callsFwdTable").innerHTML = tableCallsFwd;
+
+					  var tableSmsSent = "<tr><th>Field</th><th>Value</th></tr>";
+					  for(var i = 0; i < data.listSmsSent.length; i++) {
+						  tableSmsSent += "<tr><td>SmsSenderMsisdn</td><td>" + data.listSmsSent[i].smsSenderMsisdn + "</td></tr>";
+						  tableSmsSent += "<tr><td>SmsReceiverMsisdn</td><td>" + data.listSmsSent[i].smsReceiverMsisdn + "</td></tr>";
+						  tableSmsSent += "<tr><td>Roaming</td><td>" + data.listSmsSent[i].roaming + "</td></tr>";
+						  tableSmsSent += "<tr><td>Timestamp</td><td>" + data.listSmsSent[i].timestamp + "</td></tr>";
+						  tableSmsSent += "<tr><td>Cost</td><td>" + data.listSmsSent[i].cost + "</td></tr>";
+						  tableSmsSent += "<tr><td>SmsSenderImei</td><td>" + data.listSmsSent[i].smsSenderImei + "</td></tr>";
+						  tableSmsSent += "<tr><td>SmsReceiverImei</td><td>" + data.listSmsSent[i].smsReceiverImei + "</td></tr>";
+						  tableSmsSent += "<tr><td colspan='2' bgcolor='#ADD8E6'></td></tr>";
+					  }
+
+					  document.getElementById("smsSentTable").innerHTML = tableSmsSent;
+
+					  var tableSmsRec = "<tr><th>Field</th><th>Value</th></tr>";
+					  for(var i = 0; i < data.listSmsReceived.length; i++) {
+						  tableSmsRec += "<tr><td>SmsSenderMsisdn</td><td>" + data.listSmsReceived[i].smsSenderMsisdn + "</td></tr>";
+						  tableSmsRec += "<tr><td>SmsReceiverMsisdn</td><td>" + data.listSmsReceived[i].smsReceiverMsisdn + "</td></tr>";
+						  tableSmsRec += "<tr><td>Roaming</td><td>" + data.listSmsReceived[i].roaming + "</td></tr>";
+						  tableSmsRec += "<tr><td>Timestamp</td><td>" + data.listSmsReceived[i].timestamp + "</td></tr>";
+						  tableSmsRec += "<tr><td>Cost</td><td>" + data.listSmsReceived[i].cost + "</td></tr>";
+						  tableSmsRec += "<tr><td>SmsSenderImei</td><td>" + data.listSmsReceived[i].smsSenderImei + "</td></tr>";
+						  tableSmsRec += "<tr><td>SmsReceiverImei</td><td>" + data.listSmsReceived[i].smsReceiverImei + "</td></tr>";
+						  tableSmsRec += "<tr><td colspan='2' bgcolor='#ADD8E6'></td></tr>";
+					  }
+
+					  document.getElementById("smsRecTable").innerHTML = tableSmsRec;
+
+					  var keys = Object.keys(data.statusChangesTrackingList.allStatusChanges);	
+					  var tableStatus = "<tr><th>Date</th><th>Change</th></tr>";
+					  for(var i = 0; i < keys.length; i++) {
+						  tableStatus += "<tr><td>" + keys[i] + "</td><td>" + data.statusChangesTrackingList.allStatusChanges[keys[i]] + "</td></tr>";
+					  }
+
+					  document.getElementById("statusChangesTable").innerHTML = tableStatus;
+
+					  var tableActivity = "<tr><th>Date</th><th>Activity</th><th>Count</th></tr>";
+					  var keysA = Object.keys(data.statusActivityList.allActivities);
+					  for(var i = 0; i < keysA.length; i++) {
+						  //tableActivity += "<tr><td>" + keysA[i] + "</td><td>" + "test" + "</td><td>" + "test" + "</td></tr>";
+						  var keysDA = Object.keys(data.statusActivityList.allActivities[keysA[i]].dailyActivities);
+						  for (var j = 0; j < keysDA.length; j++) {
+							  tableActivity += "<tr><td>" + keysA[i] + "</td><td>" + keysDA[j] + "</td><td>" + data.statusActivityList.allActivities[keysA[i]].dailyActivities[keysDA[j]] + "</td></tr>";
+						  }
+					  }
+
+					  document.getElementById("statusActivityTable").innerHTML = tableActivity;
+					  
 				  }
 				  else if (request.status == 404) {
-					document.getElementById("usertable").innerHTML = "";
+					document.getElementById("infoTable").innerHTML = "";
+					document.getElementById("callsOutTable").innerHTML = "";
+					document.getElementById("callsIncTable").innerHTML = "";
+					document.getElementById("callsFwdTable").innerHTML = "";
+					document.getElementById("smsSentTable").innerHTML = "";
+					document.getElementById("smsRecTable").innerHTML = "";
+					document.getElementById("statusActivityTable").innerHTML = "";
+					document.getElementById("statusChangesTable").innerHTML = "";
 					document.getElementById('errordiv').style.display='block';
 					document.getElementById('errordiv').innerHTML="<strong>Error!</strong> User does not exist!";
 				  }
 				  else if (request.status == 503) {
-					document.getElementById("usertable").innerHTML = "";
+					document.getElementById("infoTable").innerHTML = "";
+					document.getElementById("callsOutTable").innerHTML = "";
+					document.getElementById("callsIncTable").innerHTML = "";
+					document.getElementById("callsFwdTable").innerHTML = "";
+					document.getElementById("smsSentTable").innerHTML = "";
+					document.getElementById("smsRecTable").innerHTML = "";
+					document.getElementById("statusActivityTable").innerHTML = "";
+					document.getElementById("statusChangesTable").innerHTML = "";
 					document.getElementById('errordiv').style.display='block';
 					document.getElementById('errordiv').innerHTML="<strong>Error!</strong> Redis is not available!";
 				  }
 				  else {
-					document.getElementById("usertable").innerHTML = "";
+					document.getElementById("infoTable").innerHTML = "";
+					document.getElementById("callsOutTable").innerHTML = "";
+					document.getElementById("callsIncTable").innerHTML = "";
+					document.getElementById("callsFwdTable").innerHTML = "";
+					document.getElementById("smsSentTable").innerHTML = "";
+					document.getElementById("smsRecTable").innerHTML = "";
+					document.getElementById("statusActivityTable").innerHTML = "";
+					document.getElementById("statusChangesTable").innerHTML = "";
 					document.getElementById('errordiv').style.display='block';
 					document.getElementById('errordiv').innerHTML="<strong>Error!</strong> Server is down!";
 				  }
 				};
 				request.onerror = function(e){
-					document.getElementById("usertable").innerHTML = "";
+					document.getElementById("infoTable").innerHTML = "";
+					document.getElementById("callsOutTable").innerHTML = "";
+					document.getElementById("callsIncTable").innerHTML = "";
+					document.getElementById("callsFwdTable").innerHTML = "";
+					document.getElementById("smsSentTable").innerHTML = "";
+					document.getElementById("smsRecTable").innerHTML = "";
+					document.getElementById("statusActivityTable").innerHTML = "";
+					document.getElementById("statusChangesTable").innerHTML = "";
 					document.getElementById('errordiv').style.display='block';
 					document.getElementById('errordiv').innerHTML="<strong>Error!</strong> Server is down!";
 				};
