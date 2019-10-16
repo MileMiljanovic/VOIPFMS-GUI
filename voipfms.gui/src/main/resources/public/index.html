@@ -19,37 +19,32 @@
 			}
 			
 			.jumbotron {
-			    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(30,87,153,0.54) 46%, rgba(125,185,232,0.18) 82%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(30,87,153,0.54) 46%,rgba(125,185,232,0.18) 82%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(30,87,153,0.54) 46%,rgba(125,185,232,0.18) 82%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+			    background: none
 			}
 			 
-			h1{
+			h1 {
+				font-family: Arial Black;
 			    text-align: center;
 			    color: white !important;
 			    font-weight: bold;
 			}
-		
-			.nav-tabs{
-			  background-color:#C8D3DB;
+			
+			.tabTxt {
+				color: white;
+				font-family: Arial Black;
 			}
 			
-			.nav-tabs > li > a{
-			  border-radius: 5px;
+			.nav-pills {
+				background-color: #696969;
 			}
-			.nav-tabs > li > a:hover{
-			  background-color: #3D515F !important;
-			    border-radius: 5px;
-			    color:#fff;
-			    border:1px solid black;
-			}
-			.nav-tabs > li.active > a,
-			.nav-tabs > li.active > a:focus,
-			.nav-tabs > li.active > a:hover{
-			    background-color: #68889E !important;
-			    color:#fff;
-			    border:2px solid #3F515F;
+			
+			.nav-pills> * {
+			  border-right: 2px solid #444444;
+			  border-top: 2px solid #444444;
+			  border-bottom: 2px solid #444444;
+			  border-left: 2px solid #444444;
+			  border-top-right-radius: 5px;
+			  border-bottom-right-radius: 5px;
 			}
 		
 			.usertable {
@@ -64,6 +59,8 @@
 			}
 
 			.usertable tr:nth-child(odd){background-color: #f2f2f2;}
+			
+			.usertable tr:nth-child(even){background-color: #ffffff;}
 
 			.usertable tr:hover {background-color: #ADD8E6;}
 
@@ -78,6 +75,17 @@
 			#errordiv {
 				width: 30%;
 				display: none;
+			}
+			
+			b {
+				color: white;
+				font-family: Arial Black;
+			}
+			
+			body {
+				background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url("voipfraud.jpg");
+				background-repeat: repeat-y;
+				background-size: cover;
 			}
 
 		</style>
@@ -95,24 +103,24 @@
 			</br>
 			<form class="form-inline">
 				<div class="form-group mx-sm-3 mb-2">
-				MSISDN:
+				<b>Enter MSISDN:</b>
 				<input type="text" class="form-control" id="userid" placeholder="User ID">
 				</div>
-				<button type="button" class="btn btn-primary mb-2" onclick="fetchUser(document.getElementById('userid').value)">Fetch!</button>
+				<button type="button" class="btn btn-default" onclick="fetchUser(document.getElementById('userid').value)">Fetch!</button>
 			</form>
 			</br>
 			<div class="alert alert-danger" id="errordiv">
 			</div>
 			
-			<ul class="nav nav-tabs nav-justified">
-			  <li class="active"><a data-toggle="tab" href="#home">Basic Information</a></li>
-			  <li><a data-toggle="tab" href="#callsOut">Outgoing Calls</a></li>
-			  <li><a data-toggle="tab" href="#callsInc">Incoming Calls</a></li>
-			  <li><a data-toggle="tab" href="#callsFwd">Forwarded Calls</a></li>
-			  <li><a data-toggle="tab" href="#smsSent">Sent SMS</a></li>
-			  <li><a data-toggle="tab" href="#smsRec">Received SMS</a></li>
-			  <li><a data-toggle="tab" href="#statusActivity">Status Activity</a></li>
-			  <li><a data-toggle="tab" href="#statusChanges">Status Changes</a></li>
+			<ul class="nav nav-pills nav-justified">
+			  <li class="active"><a class="tabTxt" data-toggle="tab" href="#home">Basic Information</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#callsOut">Outgoing Calls</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#callsInc">Incoming Calls</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#callsFwd">Forwarded Calls</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#smsSent">Sent SMS</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#smsRec">Received SMS</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#statusActivity">Status Activity</a></li>
+			  <li><a class="tabTxt" data-toggle="tab" href="#statusChanges">Status Changes</a></li>
 			</ul>
 			
 			<div class="tab-content">
