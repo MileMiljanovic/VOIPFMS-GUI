@@ -325,7 +325,6 @@
 					  var tableActivity = "<tr><th>Date</th><th>Activity</th><th>Count</th></tr>";
 					  var keysA = Object.keys(data.statusActivityList.allActivities);
 					  for(var i = 0; i < keysA.length; i++) {
-						  //tableActivity += "<tr><td>" + keysA[i] + "</td><td>" + "test" + "</td><td>" + "test" + "</td></tr>";
 						  var keysDA = Object.keys(data.statusActivityList.allActivities[keysA[i]].dailyActivities);
 						  for (var j = 0; j < keysDA.length; j++) {
 							  tableActivity += "<tr><td>" + keysA[i] + "</td><td>" + keysDA[j] + "</td><td>" + data.statusActivityList.allActivities[keysA[i]].dailyActivities[keysDA[j]] + "</td></tr>";
@@ -385,8 +384,7 @@
 					document.getElementById('errordiv').innerHTML="<strong>Error!</strong> Server is down!";
 				};
 				request.send();
-				
-				
+
 			}
 			
 		</script>
