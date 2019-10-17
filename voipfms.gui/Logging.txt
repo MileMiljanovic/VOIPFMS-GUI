@@ -298,3 +298,35 @@
 [2019-10-16 13:15:15.877] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
 2019-10-16 13:19:17.111  INFO 14692 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2019-10-16 13:19:17.128  INFO 14692 --- [RMI TCP Connection(15)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 09:15:00.564  INFO 10288 --- [main] com.devoteam.voipfms.gui.Application     : Starting Application on ANGSTROM with PID 10288 (started by Mile in C:\Users\Mile\Desktop\VOIPFMS GUI\VOIPFMS-GUI\voipfms.gui)
+2019-10-17 09:15:00.567  INFO 10288 --- [main] com.devoteam.voipfms.gui.Application     : No active profile set, falling back to default profiles: default
+2019-10-17 09:15:01.272  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-17 09:15:01.274  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 09:15:01.307  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-17 09:15:01.950  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 09:15:01.981  INFO 10288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 09:15:01.981  INFO 10288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 09:15:02.131  INFO 10288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 09:15:02.132  INFO 10288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1525 ms
+[2019-10-17 09:15:02.250] [INFO   ] VOIP FMS GUI initialized! 
+[2019-10-17 09:15:02.279] [INFO   ] Pinging Redis... 
+[2019-10-17 09:15:02.321] [INFO   ] Successfully connected to Redis 
+2019-10-17 09:15:02.576  INFO 10288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 09:15:02.681  INFO 10288 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-17 09:15:03.247  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 09:15:03.250  INFO 10288 --- [main] com.devoteam.voipfms.gui.Application     : Started Application in 3.289 seconds (JVM running for 3.971)
+2019-10-17 09:15:34.857  INFO 10288 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 09:15:34.857  INFO 10288 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 09:15:34.861  INFO 10288 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+[2019-10-17 09:15:50.161] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-17 09:15:50.166] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-17 09:17:06.620] [INFO   ] REST request arrived! Requested id: 3816059900022 
+[2019-10-17 09:17:06.625] [INFO   ] Subscriber with MSISDN: 3816059900022 found! Returning response... 
+[2019-10-17 09:20:45.131] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-17 09:20:45.136] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-17 09:21:46.676] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-17 09:21:46.682] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+[2019-10-17 09:24:24.133] [INFO   ] REST request arrived! Requested id: 381614352376 
+[2019-10-17 09:24:24.142] [INFO   ] Subscriber with MSISDN: 381614352376 found! Returning response... 
+2019-10-17 09:26:33.955  INFO 10288 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-10-17 09:26:33.968  INFO 10288 --- [RMI TCP Connection(18)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
